@@ -10,10 +10,10 @@ const why = [
   ['End-to-End Ownership', ''],
 ];
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
-      <PageHero eyebrow="Products" title="Software built by" em="Alpha Devs" lead="Our own products, shaped by what we learn delivering for enterprises." />
+      <PageHero as={embedded ? 'h2' : 'h1'} eyebrow="Products" title="Software built by" em="Alpha Devs" lead="Our own products, shaped by what we learn delivering for enterprises." />
       <section className="sec">
         <div className="grid">
           <article className="card">

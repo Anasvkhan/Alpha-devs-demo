@@ -3,10 +3,11 @@ import CtaBand from '../../components/CtaBand';
 
 export const metadata = { title: 'About Us — Alpha Devs' };
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
       <PageHero
+        as={embedded ? 'h2' : 'h1'}
         eyebrow="About Us"
         title="From a passion project to a"
         em="global software firm"

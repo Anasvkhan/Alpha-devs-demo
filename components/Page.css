@@ -90,3 +90,8 @@
 .cta-band h2 { margin: 0; font-size: clamp(24px, 3vw, 36px); font-weight: 600; letter-spacing: -0.03em; }
 
 @media (prefers-reduced-motion: reduce) { .phero > * { animation: none; } }
+
+/* Sections stacked on the home page */
+.embedded { scroll-margin-top: 0; border-top: 1px solid var(--hair); }
+.embedded .phero { padding-top: 110px; }
+.embedded .cta-band { display: none; }

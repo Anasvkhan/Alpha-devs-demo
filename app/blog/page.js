@@ -14,10 +14,10 @@ const posts = [
   ['Cognitive LLM pipelines replacing traditional RPA', '24 Jan 2026'],
 ];
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
-      <PageHero eyebrow="Blog" title="Notes from the" em="Alpha Team" lead="Engineering insights on AI, computer vision and cloud." />
+      <PageHero as={embedded ? 'h2' : 'h1'} eyebrow="Blog" title="Notes from the" em="Alpha Team" lead="Engineering insights on AI, computer vision and cloud." />
       <section className="sec">
         <div className="grid">
           {posts.map(([t, d]) => (

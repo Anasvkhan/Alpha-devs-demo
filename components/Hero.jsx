@@ -55,7 +55,7 @@ export default function Hero() {
             We build autonomous AI pipelines and scalable cloud architectures
             that drive business efficiency.
           </p>
-          <Link className="hero__cta" href="/services">
+          <Link className="hero__cta" href="/#services">
             Explore Our Solutions
             <span className="hero__cta-arrow" aria-hidden="true">&rarr;</span>
           </Link>

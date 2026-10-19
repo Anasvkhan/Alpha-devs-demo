@@ -21,7 +21,7 @@ export default function Footer() {
           <p>Follow</p>
           <a href="https://www.upwork.com/freelancers/~015bb35b01027c8cb7" target="_blank" rel="noreferrer">Upwork</a>
           <a href="https://www.linkedin.com/company/106025983" target="_blank" rel="noreferrer">LinkedIn</a>
-          <Link href="/contact?type=booking">Book a Call</Link>
+          <Link href="/#contact">Book a Call</Link>
         </div>
       </div>
       <p className="foot__copy">&copy; 2026 Alpha Devs. All rights reserved.</p>

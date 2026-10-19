@@ -6,15 +6,16 @@ export const metadata = { title: 'Consultancy — Alpha Devs' };
 const offers = ['AI roadmaps', 'Cloud cost optimization', 'Scalable SaaS architecture design', 'Technical audits', 'CTO advisory'];
 const phases = ['Strategic Discovery', 'Concept Engineering', 'Design Thinking', 'Architectural Engineering', 'Rigorous QA', 'Deployment & Launch', 'Continuous Evolution'];
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
       <PageHero
+        as={embedded ? 'h2' : 'h1'}
         eyebrow="Strategic Product Consultancy"
         title="We don't just build features; we architect"
         em="business models."
         lead="Free consultation to map your idea to a technical strategy."
-        cta={['Get a free consultation', '/contact?type=booking']}
+        cta={['Get a free consultation', '/#contact']}
       />
       <section className="sec">
         <h2 className="sec__title">What we <em>advise</em> on</h2>

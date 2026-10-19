@@ -2,10 +2,11 @@ import PageHero from '../../components/PageHero';
 
 export const metadata = { title: 'Contact Us — Alpha Devs' };
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
       <PageHero
+        as={embedded ? 'h2' : 'h1'}
         eyebrow="Contact Us"
         title="Let's build something"
         em="intelligent"

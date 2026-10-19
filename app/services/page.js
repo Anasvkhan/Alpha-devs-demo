@@ -12,10 +12,11 @@ const services = [
 const specialised = ['Cognitive LLM Pipelines', 'Multi-Cloud Orchestration', 'Real-time PPE Detection', 'AI Integration'];
 const process = ['Discovery & Strategy', 'Architecture & Design', 'Engineering & DevOps', 'Launch & Scale'];
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
       <PageHero
+        as={embedded ? 'h2' : 'h1'}
         eyebrow="Services"
         title="Engineering that"
         em="thinks"
@@ -28,7 +29,7 @@ export default function Page() {
               <h3>{t}</h3>
               <p>{d}</p>
               <ul className="tags">{tags.map((x) => <li key={x}>{x}</li>)}</ul>
-              <Link className="btn btn--ghost" href="/contact?type=booking">Explore Service <span aria-hidden="true">&rarr;</span></Link>
+              <Link className="btn btn--ghost" href="/#contact">Explore Service <span aria-hidden="true">&rarr;</span></Link>
             </article>
           ))}
         </div>

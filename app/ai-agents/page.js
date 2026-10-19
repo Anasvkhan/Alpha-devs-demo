@@ -6,15 +6,16 @@ export const metadata = { title: 'AI Agents — Alpha Devs' };
 const functions = ['Sales', 'Finance', 'Operations', 'Customer Service', 'HR', 'IT', 'Knowledge Management', 'Product Management', 'Sustainability'];
 const integrations = ['Microsoft Azure', 'Dynamics 365', 'SAP', 'SAP S/4HANA', 'Microsoft 365', 'SharePoint', 'Power Platform', 'Azure OpenAI', 'Teams', 'Oracle', 'Salesforce', 'Power BI', 'Qlik Sense', 'GitHub Copilot', 'Azure DevOps', 'Cosmos DB', 'Power Automate', 'Logic Apps'];
 
-export default function Page() {
+export default function Page({ embedded = false }) {
   return (
     <>
       <PageHero
+        as={embedded ? 'h2' : 'h1'}
         eyebrow="AI Agents"
         title="44+ proven agent"
         em="accelerators"
         lead="Ready-to-adapt AI agents across your business functions, wired into the tools you already use."
-        cta={['Book a Discovery Call', '/contact?type=booking']}
+        cta={['Book a Discovery Call', '/#contact']}
       />
       <section className="sec">
         <h2 className="sec__title">Business <em>functions</em></h2>
