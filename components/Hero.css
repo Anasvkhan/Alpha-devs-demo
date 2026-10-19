@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--bg) url('/hero-poster.jpg') center / cover no-repeat;
 }
 .hero__video {
   position: absolute;

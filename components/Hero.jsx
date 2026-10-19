@@ -20,7 +20,10 @@ export default function Hero() {
   // nudge it once and swallow the rejection if the browser still refuses.
   useEffect(() => {
     const v = videoRef.current;
-    if (v) v.play().catch(() => {});
+    if (!v) return;
+    // canplay can fire before hydration attaches onCanPlay; catch that case.
+    if (v.readyState >= 3) setReady(true);
+    v.play().catch(() => {});
   }, []);
 
   return (
